@@ -1,6 +1,6 @@
 {
     "name": "stickee-javascript-code-style",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Stickee JavaScript code style",
     "scripts": {
         "install": "cp -u dist/.eslintrc $INIT_CWD && npx install-peerdeps --dev eslint-config-stickee"
