@@ -1,10 +1,15 @@
 {
     "name": "stickee-javascript-code-style",
-    "version": "1.1.3",
+    "version": "1.2.0",
     "description": "Stickee JavaScript code style",
     "scripts": {
-        "postinstall": "cp -u dist/.eslintrc $INIT_CWD && cd $INIT_CWD && npx install-peerdeps --dev eslint-config-stickee"
+        "postinstall": "npm run copy-eslintrc && npm run install-peerdeps",
+        "copy-eslintrc": "cross-env-shell \"cp -u dist/.eslintrc $INIT_CWD\"",
+        "install-peerdeps": "cross-env-shell \"cd $INIT_CWD && npx install-peerdeps --dev eslint-config-stickee\""
     },
     "author": "Paul Tibbetts <paul.tibbetts@stickee.co.uk>",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "cross-env": "^7.0.0"
+    }
 }
