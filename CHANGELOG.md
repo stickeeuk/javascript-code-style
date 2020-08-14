@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/stickeeuk/javascript-code-style/compare/v1.0.0...v2.0.0) (2020-08-14)
+
+
+### chore
+
+* bump version number ([#2](https://github.com/stickeeuk/javascript-code-style/issues/2)) ([a3a19e3](https://github.com/stickeeuk/javascript-code-style/commit/a3a19e3970adf52492da6102f5bac4fd65e9cff5))
+
+
+### BREAKING CHANGES
+
+* use `npx stickee-javascript-code-style` instead of installing this package
+
 # 1.0.0 (2020-08-14)
 
 
