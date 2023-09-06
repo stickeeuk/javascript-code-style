@@ -31,7 +31,7 @@ var argv = require('yargs')
 })
     .argv;
 var ESLINT_CONFIG_FILE_NAME = '.eslintrc.json';
-var ESLINT_CONFIG_URL = "https://raw.githubusercontent.com/stickeeuk/javascript-code-style/master/" + ESLINT_CONFIG_FILE_NAME;
+var ESLINT_CONFIG_URL = "https://raw.githubusercontent.com/stickeeuk/javascript-code-style/main/" + ESLINT_CONFIG_FILE_NAME;
 var ENCODING = 'utf8';
 var YARN_LOCK_EXISTS = fs_1.default.existsSync('yarn.lock');
 var YARN = argv.yarn || YARN_LOCK_EXISTS;

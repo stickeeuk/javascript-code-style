@@ -17,7 +17,7 @@ const argv = require('yargs')
     .argv;
 
 const ESLINT_CONFIG_FILE_NAME = '.eslintrc.json';
-const ESLINT_CONFIG_URL = `https://raw.githubusercontent.com/stickeeuk/javascript-code-style/master/${ESLINT_CONFIG_FILE_NAME}`;
+const ESLINT_CONFIG_URL = `https://raw.githubusercontent.com/stickeeuk/javascript-code-style/main/${ESLINT_CONFIG_FILE_NAME}`;
 
 const ENCODING = 'utf8';
 
@@ -96,7 +96,7 @@ const mergeEslintConfigs = () => {
 }
 
 const installPeerDependencies = () => {
-    const command = `npx install-peerdeps eslint-config-stickee --only-peers ${YARN ? '--yarn' : ''}`;    
+    const command = `npx install-peerdeps eslint-config-stickee --only-peers ${YARN ? '--yarn' : ''}`;
     const spinner = ora('installing peer dependencies...').start()
     return new Promise((resolve, reject) => {
         exec(command, (error) => {
